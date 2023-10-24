@@ -2,13 +2,17 @@
   "name": "notmydish",
   "version": "1.0.0",
   "description": "",
-  "main": "main.ts",
+  "type": "commonjs",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node dist/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8"
   }
 }
