@@ -6,11 +6,11 @@ const AuthPage: React.FC = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
 
   const handleSubmitLogin = (username: string, password: string) => {
-    // Handle login logic here
+    // plug in with backend
   };
 
   const handleSubmitRegister = (username: string, password: string, email: string) => {
-    // Handle register logic here
+    // plugin with backend
   };
 
   return (
