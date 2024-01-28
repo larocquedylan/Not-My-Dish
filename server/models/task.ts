@@ -8,3 +8,5 @@ interface Task {
     createdOn: Date;
     updatedOn: Date;
 }
+
+export default Task;
