@@ -1,6 +1,6 @@
 // Task interface definition goes here
 
-interface Task {
+export default class Task {
     _id: string;
     title: string;
     description: string;

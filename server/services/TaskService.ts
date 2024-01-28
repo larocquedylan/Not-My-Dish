@@ -28,9 +28,7 @@ class TaskService {
 
     public removeTask(taskID: string) {
         this.tasks.filter(task => task._id === taskID);
-    
-
-
+    }
 }
 
 const mockTasks : Task [] = [
