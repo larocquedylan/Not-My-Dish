@@ -1,6 +1,6 @@
 // User interface definition goes here
 
-interface User {
+export default class User {
     _id: string;
     name: string;
     email: string;
@@ -9,4 +9,3 @@ interface User {
     updatedOn: Date;
 }
 
-export default User;
