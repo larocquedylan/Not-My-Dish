@@ -1,5 +1,6 @@
 import UserService from "./services/UserService";
 import { UserController } from "./controllers/UserController";
+import { HouseController } from "./controllers/HouseController";
 
 
 const express = require('express');
@@ -20,6 +21,11 @@ app.get('/', (req, res) => {
 app.post('/users', (req, res) => {
   UserController.SignUpHandler(req, res);
 });
+
+app.post ('/house', (req, res) => {
+  HouseController.HouseHandler(req, res);
+
+})
 
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!');

@@ -1,14 +1,13 @@
 // User interface definition goes here
 
-import Task from "./task";
+import Task from "./Task";
 
-interface User {
+export default class User {
     _id: string;
     name: string;
     email: string;
     password: string;
     createdOn: Date;
     updatedOn: Date;
-    completedTaskList: Array<Task>;
 }
 
