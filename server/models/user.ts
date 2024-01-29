@@ -12,4 +12,3 @@ interface User {
     completedTaskList: Array<Task>;
 }
 
-export default User;

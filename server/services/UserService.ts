@@ -1,5 +1,7 @@
 import User from "../models/User";
 
+import {v4 as uuidv4} from 'uuid';
+
 class UserService {
     private static instance: UserService;
     private users: User[] = [];
@@ -16,6 +18,7 @@ class UserService {
     }
 
     public create(user: User): User {
+        user._id = uuidv4();
         this.users.push(user);
         return user;
     }
